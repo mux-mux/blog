@@ -1,20 +1,10 @@
-'use client';
-import { useEffect, useState } from 'react';
 import BlogSummaryCard from '@/components/BlogSummaryCard';
 import { getBlogPostList } from '@/helpers/file-helpers';
 
 import styles from './homepage.module.css';
 
-function Home() {
-  const [blogPosts, setBlogPosts] = useState([]);
-
-  useEffect(() => {
-    const getBlogData = async () => {
-      const data = await getBlogPostList();
-      setBlogPosts(data);
-    };
-    getBlogData();
-  }, [setBlogPosts]);
+async function Home() {
+  const blogPosts = await getBlogPostList();
 
   return (
     <div className={styles.wrapper}>
@@ -22,7 +12,7 @@ function Home() {
 
       {blogPosts.map(({ slug, title, abstract, publishedOn }) => (
         <BlogSummaryCard
-          key={publishedOn}
+          key={slug}
           slug={slug}
           title={title}
           abstract={abstract}

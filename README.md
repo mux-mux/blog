@@ -14,5 +14,6 @@ We begin with pre-built components and styles, but without functionality. The go
 
 ## Task 1 - update the homepage so that it shows a list of blog posts
 
-//TODO Iterate over the data read from the file system!
-Problem: `"fs" module not found` error when using `setState`
+//TODO Iterate over the data read from the file system!<br />
+Problem: `"fs" module not found` error when using `setState`<br />
+Solution: Remove `setState` and assign `blogPost` directly to a variable.<br />
