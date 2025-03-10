@@ -16,8 +16,9 @@ We begin with pre-built components and styles, but without functionality. The go
 
 //TODO Iterate over the data read from the file system!<br />
 Problem: `"fs" module not found` error when using `setState`<br />
-Solution: Remove `setState` and assign `blogPost` directly to a variable.<br />
+Solution: Remove `setState` and assign `blogPost` directly to a variable.
 
 ## Task 2 - display the full blog post content when clicking on a post from the homepage
 
-//TODO for example inside MDXRemote component render /content/javascript-modulo-operator.mdx
+//TODO for example inside MDXRemote component render /content/javascript-modulo-operator.mdx <br />
+Ok: The `MDXRemote` docs and the `Next.js {params}` lesson were helpful.
