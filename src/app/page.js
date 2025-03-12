@@ -1,7 +1,12 @@
 import BlogSummaryCard from '@/components/BlogSummaryCard';
 import { getBlogPostList } from '@/helpers/file-helpers';
-
+import { BLOG_TITLE } from '@/constants';
 import styles from './homepage.module.css';
+
+export const metadata = {
+  title: BLOG_TITLE,
+  description: 'A wonderful blog about JavaScript',
+};
 
 async function Home() {
   const blogPosts = await getBlogPostList();
