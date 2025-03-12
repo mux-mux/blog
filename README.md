@@ -23,6 +23,8 @@ We begin with pre-built components and styles, but without functionality. The go
 //TODO for example inside MDXRemote component render /content/javascript-modulo-operator.mdx <br />
 **Ok:** The `MDXRemote` docs and the `Next.js {params}` lesson were helpful.
 
-## Task 3 - Adding metadata like `<title>` tag, and description `<meta>` tag
+## Task 3 - Adding metadata (`<title>` & `<meta>` description)
 
-//TODO Generate metadata for dynamic pages and homepage, use React Cache API to optimize performance
+//TODO Generate metadata for dynamic pages and the homepage, leveraging the _React Cache API_ for optimization<br />
+**Ok:** The `Next's Metadata API` and `React Cache API` lessons were helpful.<br />
+**Small improvments:** Move homepage metadata to `layout.js`, append `• ${BLOG_TITLE}` to the title to include the blog name

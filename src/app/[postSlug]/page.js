@@ -1,6 +1,6 @@
 import React from 'react';
 import BlogHero from '@/components/BlogHero';
-
+import { BLOG_TITLE } from '@/constants';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { loadBlogPost } from '@/helpers/file-helpers';
 
@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const { title, abstract } = postData.frontmatter;
 
   return {
-    title: title,
+    title: `${title} • ${BLOG_TITLE}`,
     description: abstract,
   };
 }
