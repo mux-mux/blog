@@ -28,3 +28,7 @@ We begin with pre-built components and styles, but without functionality. The go
 //TODO Generate metadata for dynamic pages and the homepage, leveraging the _React Cache API_ for optimization<br />
 **Ok:** The `Next's Metadata API` and `React Cache API` lessons were helpful.<br />
 **Small improvments:** Move homepage metadata to `layout.js`, append `• ${BLOG_TITLE}` to the title to include the blog name
+
+## Task 4 - Apply code snippets syntax-highlighting inside blog posts
+
+//TODO Apply code snippets syntax-highlighting using Bright package
