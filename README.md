@@ -31,4 +31,5 @@ We begin with pre-built components and styles, but without functionality. The go
 
 ## Task 4 - Apply code snippets syntax-highlighting inside blog posts
 
-//TODO Apply code snippets syntax-highlighting using Bright package
+//TODO Apply code snippets syntax-highlighting using Bright package<br />
+**Ok:** The `Bright package` documentation were helpful.
