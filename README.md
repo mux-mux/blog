@@ -43,3 +43,5 @@ We begin with pre-built components and styles, but without functionality. The go
 ## Task 5.2 - Animate pink circles with Framer Motion
 
 //TODO Apply **layout animation** for a smooth transition when circles divide into groups<br />
+**Ok:** The `Layout Animations` lesson were helpful.<br />
+**Small improvments:** apply `LayoutGroup` animation, respect `ReduceMotions` preferences
