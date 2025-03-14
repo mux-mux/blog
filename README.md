@@ -39,3 +39,7 @@ We begin with pre-built components and styles, but without functionality. The go
 //TODO Fix the error when rendering `<DivisionGroupsDemo />` inside `.mdx` file<br />
 **Problem:** Do not know how to use custom components inside an `.mdx` file <br />
 **Solution:** Inside dynamic `[postSlug] page.js` file add lazy loading for `<DivisionGroupsDemo />` component and pass it to the `<MDXRemote components />` prop
+
+## Task 5.2 - Animate pink circles with Framer Motion
+
+//TODO Apply **layout animation** for a smooth transition when circles divide into groups<br />
