@@ -33,3 +33,8 @@ We begin with pre-built components and styles, but without functionality. The go
 
 //TODO Apply code snippets syntax-highlighting using Bright package<br />
 **Ok:** The `Bright package` documentation were helpful.
+
+## Task 5.1 - Rendering embedded components inside mdx file
+
+//TODO Fix the error when rendering `<DivisionGroupsDemo />` inside `.mdx` file<br />
+**Problem:** Do not know how to use custom components inside an `.mdx` file <br />
