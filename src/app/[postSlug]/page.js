@@ -2,10 +2,16 @@ import React from 'react';
 import BlogHero from '@/components/BlogHero';
 import { BLOG_TITLE } from '@/constants';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import dynamic from 'next/dynamic';
 import CodeSnippet from '@/components/CodeSnippet';
+
 import { loadBlogPost } from '@/helpers/file-helpers';
 
 import styles from './postSlug.module.css';
+
+const DivisionGroupsDemo = dynamic(() =>
+  import('@/components/DivisionGroupsDemo')
+);
 
 export async function generateMetadata({ params }) {
   const postData = await loadBlogPost(params.postSlug);
@@ -27,7 +33,10 @@ async function BlogPost({ params }) {
       <div className={styles.page}>
         <MDXRemote
           source={postData.content}
-          components={{ pre: CodeSnippet }}
+          components={{
+            pre: CodeSnippet,
+            DivisionGroupsDemo,
+          }}
         />
       </div>
     </article>
