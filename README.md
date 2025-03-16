@@ -40,8 +40,14 @@ We begin with pre-built components and styles, but without functionality. The go
 **Problem:** Do not know how to use custom components inside an `.mdx` file <br />
 **Solution:** Inside dynamic `[postSlug] page.js` file add lazy loading for `<DivisionGroupsDemo />` component and pass it to the `<MDXRemote components />` prop
 
-## Task 5.2 - Animate pink circles with Framer Motion
+## Task 5.2 - Animate circles with Framer Motion
 
 //TODO Apply **layout animation** for a smooth transition when circles divide into groups<br />
 **Ok:** The `Layout Animations` lesson were helpful.<br />
 **Small improvments:** apply `LayoutGroup` animation, respect `ReduceMotions` preferences
+
+## Task 5.3 - Animate Reminder Area circles with Framer Motion
+
+//TODO: Uncomment another instance of DivisionGroupDemo and animate elements to smoothly transition into the Reminder Area, ensuring new elements are positioned correctly to the right of existing ones.<br />
+
+**Ok:** Marking element IDs was helpful.<br />
