@@ -50,4 +50,5 @@ We begin with pre-built components and styles, but without functionality. The go
 
 //TODO: Uncomment another instance of DivisionGroupDemo and animate elements to smoothly transition into the Reminder Area, ensuring new elements are positioned correctly to the right of existing ones.<br />
 
-**Ok:** Marking element IDs was helpful.<br />
+**Ok:** `Marking element IDs` was helpful.<br />
+**Another approach:** To modify `range` function inputs `(totalInGroup, numOfItems)` to generate an array with apropriate indexes

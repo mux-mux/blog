@@ -91,6 +91,11 @@ function DivisionGroupsDemo({
                   key={index}
                   layoutId={reminderId}
                   className={styles.item}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 400,
+                    damping: 40,
+                  }}
                 />
               );
             })}
