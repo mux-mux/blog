@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useId } from 'react';
 import clsx from 'clsx';
 import { Play, Pause, RotateCcw } from 'react-feather';
 import { motion } from 'framer-motion';
@@ -16,9 +16,10 @@ const COLORS = [
 ];
 
 function CircularColorsDemo() {
-  const [animationState, setAnimationState] = useState('reseted');
+  const [animationState, setAnimationState] = useState('idle');
   const [timeElapsed, setTimeElapsed] = useState(0);
   // TODO: This value should increase by 1 every second:
+  const id = useId();
 
   function getColor({ timeElapsed }) {
     const colorIndex = timeElapsed % COLORS.length;
@@ -53,7 +54,7 @@ function CircularColorsDemo() {
               {isSelected && (
                 <motion.div
                   className={styles.selectedColorOutline}
-                  layout="position"
+                  layoutId={`${id}-selected-color-outline`}
                 />
               )}
               <div
@@ -78,14 +79,25 @@ function CircularColorsDemo() {
           <dd>{timeElapsed}</dd>
         </dl>
         <div className={styles.actions}>
-          <button>
-            <Play onClick={() => setAnimationState('playing')} />
-            <VisuallyHidden>Play</VisuallyHidden>
+          <button
+            onClick={() => {
+              if (animationState === 'playing') {
+                setAnimationState('idle');
+              } else {
+                setAnimationState('playing');
+                setTimeElapsed(timeElapsed + 1);
+              }
+            }}
+          >
+            {animationState === 'playing' ? <Pause /> : <Play />}
+            <VisuallyHidden>
+              {animationState === 'playing' ? 'Pause' : 'Play'}
+            </VisuallyHidden>
           </button>
           <button>
             <RotateCcw
               onClick={() => {
-                setAnimationState('reseted');
+                setAnimationState('idle');
                 setTimeElapsed(0);
               }}
             />

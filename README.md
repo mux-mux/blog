@@ -52,7 +52,9 @@ We begin with pre-built components and styles, but without functionality. The go
 **Ok:** `Marking element IDs` was helpful.<br />
 **Another approach:** To modify `range` function inputs `(totalInGroup, numOfItems)` to generate an array with apropriate indexes
 
-## 6 - Implement the logic for the `CircularColorsDemo` component
+## 6 - Implement the logic for the CircularColorsDemo component
 
 // TODO: Implement color-switching logic and create a player with **Play** and **Reset Animation** buttons<br />
-**Problem:** Framer Motion `layout="position"` and `layoutId={uniqueId}` are not working<br />
+**Problem:** Framer Motion `layout="position"` and `layoutId={index}` are not working in this situation<br />
+**Solution:** use useId hook an mix it with a static text `layoutId=${id}-text` value<br />
+**Improvments:** Display either the Play or Pause button based on the `animationState`
