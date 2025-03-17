@@ -44,11 +44,15 @@ We begin with pre-built components and styles, but without functionality. The go
 
 //TODO Apply **layout animation** for a smooth transition when circles divide into groups<br />
 **Ok:** The `Layout Animations` lesson were helpful.<br />
-**Small improvments:** apply `LayoutGroup` animation, respect `ReduceMotions` preferences
+**Improvments:** apply `LayoutGroup` animation, respect `ReduceMotions` preferences
 
 ## Task 5.3 - Animate Reminder Area circles with Framer Motion
 
-//TODO: Uncomment another instance of DivisionGroupDemo and animate elements to smoothly transition into the Reminder Area, ensuring new elements are positioned correctly to the right of existing ones.<br />
-
+//TODO Uncomment another instance of `DivisionGroupDemo` and animate elements to smoothly transition into the Reminder Area, ensuring new elements are positioned correctly to the right of existing ones.<br />
 **Ok:** `Marking element IDs` was helpful.<br />
 **Another approach:** To modify `range` function inputs `(totalInGroup, numOfItems)` to generate an array with apropriate indexes
+
+## 6 - Implement the logic for the `CircularColorsDemo` component
+
+// TODO: Implement color-switching logic and create a player with **Play** and **Reset Animation** buttons<br />
+**Problem:** Framer Motion `layout="position"` and `layoutId={uniqueId}` are not working<br />

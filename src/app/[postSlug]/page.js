@@ -12,6 +12,9 @@ import styles from './postSlug.module.css';
 const DivisionGroupsDemo = dynamic(() =>
   import('@/components/DivisionGroupsDemo')
 );
+const CircularColorsDemo = dynamic(() =>
+  import('@/components/CircularColorsDemo')
+);
 
 export async function generateMetadata({ params }) {
   const postData = await loadBlogPost(params.postSlug);
@@ -36,6 +39,7 @@ async function BlogPost({ params }) {
           components={{
             pre: CodeSnippet,
             DivisionGroupsDemo,
+            CircularColorsDemo,
           }}
         />
       </div>
