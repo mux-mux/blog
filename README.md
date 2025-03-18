@@ -32,7 +32,7 @@ We begin with pre-built components and styles, but without functionality. The go
 ## Task 4 - Apply code snippets syntax-highlighting inside blog posts
 
 //TODO Apply code snippets syntax-highlighting using Bright package<br />
-**Ok:** The `Bright package` documentation were helpful.
+**Ok:** The `Bright package` documentation was helpful.
 
 ## Task 5.1 - Rendering embedded components inside mdx file
 
@@ -43,7 +43,7 @@ We begin with pre-built components and styles, but without functionality. The go
 ## Task 5.2 - Animate circles with Framer Motion
 
 //TODO Apply **layout animation** for a smooth transition when circles divide into groups<br />
-**Ok:** The `Layout Animations` lesson were helpful.<br />
+**Ok:** The `Layout Animations` lesson was helpful.<br />
 **Improvments:** apply `LayoutGroup` animation, respect `ReduceMotions` preferences
 
 ## Task 5.3 - Animate Reminder Area circles with Framer Motion
@@ -63,3 +63,4 @@ We begin with pre-built components and styles, but without functionality. The go
 ## 7 - Implement theme toggle functionality
 
 //TODO Inside `layout.js` file we have a hardcoded `light` theme. Our goal is to implement theme toggle feature that switches themes when clicking on the Sun/Moon icon<br />
+**Ok:** The `Dark Mode` lesson was helpful.

@@ -4,7 +4,11 @@ import VisuallyHidden from '@/components/VisuallyHidden';
 import { Sun, Moon } from 'react-feather';
 import Cookie from 'js-cookie';
 
-import { LIGHT_TOKENS, DARK_TOKENS } from '@/constants';
+import {
+  COLOR_THEME_COOKIE_NAME,
+  LIGHT_TOKENS,
+  DARK_TOKENS,
+} from '@/constants';
 
 import styles from './DarkLightToggle.module.css';
 
@@ -16,7 +20,7 @@ function DarkLightToggle({ initialTheme }) {
 
     setTheme(nextTheme);
 
-    Cookie.set('color-theme', nextTheme, { expires: 1000 });
+    Cookie.set(COLOR_THEME_COOKIE_NAME, nextTheme, { expires: 1000 });
 
     const COLORS = nextTheme === 'light' ? LIGHT_TOKENS : DARK_TOKENS;
 
