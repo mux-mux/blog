@@ -48,13 +48,18 @@ We begin with pre-built components and styles, but without functionality. The go
 
 ## Task 5.3 - Animate Reminder Area circles with Framer Motion
 
-//TODO Uncomment another instance of `DivisionGroupDemo` and animate elements to smoothly transition into the Reminder Area, ensuring new elements are positioned correctly to the right of existing ones.<br />
+//TODO Uncomment another instance of `DivisionGroupDemo` and animate elements to smoothly transition into the Reminder Area, ensuring new elements are positioned correctly to the right of existing ones<br />
 **Ok:** `Marking element IDs` was helpful.<br />
 **Another approach:** To modify `range` function inputs `(totalInGroup, numOfItems)` to generate an array with apropriate indexes
 
 ## 6 - Implement the logic for the CircularColorsDemo component
 
-// TODO: Implement color-switching logic and create a player with **Play** and **Reset Animation** buttons<br />
+//TODO Implement color-switching logic and create a player with **Play** and **Reset Animation** buttons. Additionally, apply Framer Motion animations to the selected element rectangle<br />
+**Ok:** with create logic. `Side Effects` lesson was helpful.<br />
 **Problem:** Framer Motion `layout="position"` and `layoutId={index}` are not working in this situation<br />
-**Solution:** use useId hook an mix it with a static text `layoutId=${id}-text` value<br />
+**Solution:** use `useId` hook an mix it with a static text `layoutId=${id}-text` value<br />
 **Improvments:** Display either the Play or Pause button based on the `animationState`
+
+## 7 - Implement theme toggle functionality
+
+//TODO Inside `layout.js` file we have a hardcoded `light` theme. Our goal is to implement theme toggle feature that switches themes when clicking on the Sun/Moon icon<br />

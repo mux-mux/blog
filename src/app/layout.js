@@ -1,6 +1,7 @@
 import React from 'react';
 import { Work_Sans, Spline_Sans_Mono } from 'next/font/google';
 import clsx from 'clsx';
+import { cookies } from 'next/headers';
 import { BLOG_TITLE, LIGHT_TOKENS, DARK_TOKENS } from '@/constants';
 
 import Header from '@/components/Header';
@@ -28,7 +29,10 @@ const monoFont = Spline_Sans_Mono({
 
 function RootLayout({ children }) {
   // TODO: Dynamic theme depending on user preference
-  const theme = 'light';
+  const savedTheme = cookies().get('color-theme');
+  const theme = savedTheme?.value || 'light';
+
+  const themeColors = theme === 'light' ? LIGHT_TOKENS : DARK_TOKENS;
 
   return (
     <RespectMotionPreferences>
@@ -36,7 +40,7 @@ function RootLayout({ children }) {
         lang="en"
         className={clsx(mainFont.variable, monoFont.variable)}
         data-color-theme={theme}
-        style={theme === 'light' ? LIGHT_TOKENS : DARK_TOKENS}
+        style={themeColors}
       >
         <body>
           <Header theme={theme} />
