@@ -18,7 +18,6 @@ function Header({ theme, className, ...delegated }) {
           <Rss
             size="1.5rem"
             style={{
-              // Optical alignment
               transform: 'translate(2px, -2px)',
             }}
           />

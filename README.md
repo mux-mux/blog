@@ -70,3 +70,5 @@ We begin with pre-built components and styles, but without functionality. The go
 //TODO use the `prebuild` script and the npm `rss` package to generate an RSS feed. Also, utilize `getBlogPostList` to retrieve the list of blog posts<br />
 
 **Problem:** "Cannot use import statement outside a module" error. Adding `"type": "module"` leads to multiple other errors<br />
+**Solution:** Generate the RSS feed dynamically using the `app/rss.xml/route.js` path instead of the `prebuild` script<br />
+**Small improvments:** Create a `BLOG_DESCRIPTION` constant and reuse it in both metadata and RSS feed generation

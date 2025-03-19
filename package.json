@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "new-component": "new-component",
-    "prebuild": "node src/scripts/generateRSS.js"
+    "new-component": "new-component"
   },
   "dependencies": {
     "bright": "0.8.4",
