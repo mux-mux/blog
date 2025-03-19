@@ -11,12 +11,12 @@ export async function GET() {
 
   const blogPosts = await getBlogPostList();
 
-  blogPosts.forEach((post) => {
+  blogPosts.forEach(({ slug, title, abstract, publishedOn }) => {
     feed.item({
-      title: post.title,
-      description: post.abstract,
-      date: post.publishedOn,
-      url: `http://some-website.com/${post.slug}`,
+      title,
+      description: abstract,
+      date: publishedOn,
+      url: `http://localhost:3000/${slug}`,
     });
   });
 
