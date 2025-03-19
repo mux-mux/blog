@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "new-component": "new-component"
+    "new-component": "new-component",
+    "prebuild": "node src/scripts/generateRSS.js"
   },
   "dependencies": {
     "bright": "0.8.4",
@@ -23,6 +24,7 @@
     "next-mdx-remote": "4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-feather": "2.0.10"
+    "react-feather": "2.0.10",
+    "rss": "^1.2.2"
   }
 }

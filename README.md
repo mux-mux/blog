@@ -64,3 +64,9 @@ We begin with pre-built components and styles, but without functionality. The go
 
 //TODO Inside `layout.js` file we have a hardcoded `light` theme. Our goal is to implement theme toggle feature that switches themes when clicking on the Sun/Moon icon<br />
 **Ok:** The `Dark Mode` lesson was helpful.
+
+## 8 - Implement RSS feed functionality
+
+//TODO use the `prebuild` script and the npm `rss` package to generate an RSS feed. Also, utilize `getBlogPostList` to retrieve the list of blog posts<br />
+
+**Problem:** "Cannot use import statement outside a module" error. Adding `"type": "module"` leads to multiple other errors<br />
