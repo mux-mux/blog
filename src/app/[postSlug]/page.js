@@ -3,6 +3,7 @@ import BlogHero from '@/components/BlogHero';
 import { BLOG_TITLE } from '@/constants';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import dynamic from 'next/dynamic';
+import { notFound } from 'next/navigation';
 import CodeSnippet from '@/components/CodeSnippet';
 
 import { loadBlogPost } from '@/helpers/file-helpers';
@@ -17,18 +18,34 @@ const CircularColorsDemo = dynamic(() =>
 );
 
 export async function generateMetadata({ params }) {
-  const postData = await loadBlogPost(params.postSlug);
-  const { title, abstract } = postData.frontmatter;
+  try {
+    const postData = await loadBlogPost(params.postSlug);
+    const { title, abstract } = postData.frontmatter;
 
-  return {
-    title: `${title} • ${BLOG_TITLE}`,
-    description: abstract,
-  };
+    return {
+      title: `${title} • ${BLOG_TITLE}`,
+      description: abstract,
+    };
+  } catch (error) {
+    return {
+      title: `Post ${params.postSlug} Not Found`,
+      description: 'The requested blog post does not exist.',
+    };
+  }
 }
 
 async function BlogPost({ params }) {
-  const postData = await loadBlogPost(params.postSlug);
+  let postData;
+  try {
+    postData = await loadBlogPost(params.postSlug);
+  } catch (error) {
+    return notFound();
+  }
   const { title, publishedOn } = postData.frontmatter;
+
+  if (!postData) {
+    notFound();
+  }
 
   return (
     <article className={styles.wrapper}>

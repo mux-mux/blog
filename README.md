@@ -68,7 +68,10 @@ We begin with pre-built components and styles, but without functionality. The go
 ## 8 - Implement RSS feed functionality
 
 //TODO use the npm `rss` package to generate an RSS feed. Also, utilize `getBlogPostList` to retrieve the list of blog posts<br />
-
 **Problem:** "Cannot use import statement outside a module" error. Adding `"type": "module"` leads to multiple other errors<br />
 **Solution:** Generate the RSS feed dynamically using the `app/rss.xml/route.js` path instead of the `prebuild` script<br />
 **Small improvments:** Create a `BLOG_DESCRIPTION` constant and reuse it in both metadata and RSS feed generation
+
+## 9 - Implement handling invalid URLs
+
+// TODO: Create a `not-found.js` file inside the app folder. Refer to the `Next.js docs` for further steps and apply custom styles<br />
