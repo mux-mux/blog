@@ -75,3 +75,5 @@ We begin with pre-built components and styles, but without functionality. The go
 ## 9 - Implement handling invalid URLs
 
 // TODO: Create a `not-found.js` file inside the app folder. Refer to the `Next.js docs` for further steps and apply custom styles<br />
+**Ok:** The `Next.js docs` was helpful.<br />
+**Small improvments:** Generate `meta tags` for the 404 page, use a try/catch inside the loadBlogPost function to handle not found error
