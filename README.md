@@ -81,3 +81,6 @@ We begin with pre-built components and styles, but without functionality. The go
 ### Task 10 - Add Suspense logic
 
 // TODO: Create a `loading.js` file beside the blog post page component. Add spinner inside<br />
+**Ok:** The `Next.js Suspense docs` and `Motion Transitions docs` were helpful.<br />
+
+### 🎉Myself congratulations! I've completed `Josh W. Comeau's Joy of React` course and finished the final project with additional tasks!🏆 Well done!🥳
